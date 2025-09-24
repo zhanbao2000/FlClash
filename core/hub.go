@@ -177,7 +177,7 @@ func handleAsyncTestDelay(paramsString string, fn func(string)) {
 			return false, nil
 		}
 
-		expectedStatus, err := utils.NewUnsignedRanges[uint16]("")
+		expectedStatus, err := utils.NewUnsignedRanges[uint16]("200-399")
 		if err != nil {
 			fn("")
 			return false, nil
